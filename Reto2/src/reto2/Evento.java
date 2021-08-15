@@ -7,86 +7,6 @@ package reto2;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
-/**
- *
- * @author perei
- */
-
-class Persona{
-    protected String nombres;
-    protected String apellidos;
-    protected String identificacion;
-    protected String nacionalidad;
-    protected int edad;
-    protected String deporte;
-    protected String tipo;
-
-    public Persona(String nombres, String apellidos, String identificacion,
-            String nacionalidad, int edad, String deporte, String tipo) {
-        this.nombres = nombres;
-        this.apellidos = apellidos;
-        this.identificacion = identificacion;
-        this.nacionalidad = nacionalidad;
-        this.edad = edad;
-        this.deporte = deporte;
-        this.tipo = tipo;
-    }
-
-    @Override
-    public String toString() {
-        return this.nombres; //To change body of generated methods, choose Tools | Templates.
-    }
-    
-}
-
-class Deportista extends Persona{
-    
-    private String marcaClasificacion;
-
-    public Deportista(String nombres, String apellidos, String identificacion, 
-            String nacionalidad, int edad, String deporte,String marcaClasificacion,String tipo) {
-        super(nombres, apellidos, identificacion, nacionalidad, edad, deporte, tipo);
-        this.marcaClasificacion = marcaClasificacion;
-    }      
-
-    @Override
-    public String toString() {
-        String toReturn = "Deportista\n";
-        toReturn += "\t " + this.nombres + " " + this.apellidos + "\n";
-        toReturn += "\t Identidad: " + this.identificacion + "\n";
-        toReturn += "\t Edad: " + Integer.toString(this.edad) + "\n";
-        toReturn += "\t Deporte: " + this.deporte + "\n";
-        toReturn += "\t Marca Clasificación: " + this.marcaClasificacion + "\n";
-        toReturn += "\t Nacionalidad: " + this.nacionalidad + "\n";          
-        toReturn += "\t \t ------";      
-        return toReturn; //To change body of generated methods, choose Tools | Templates.
-    }
-    
-}
-
-class Entrenador extends Persona{
-    private boolean esCertificado;
-
-    public Entrenador(String nombres, String apellidos, String identificacion, 
-            String nacionalidad, int edad, String deporte,boolean esCertificado,String tipo){
-        super(nombres, apellidos, identificacion, nacionalidad, edad, deporte, tipo);
-        this.esCertificado = esCertificado;
-    }   
-    @Override
-    public String toString() {
-        String toReturn = "Entrenador\n";
-        toReturn += "\t " + this.nombres + " " + this.apellidos + "\n";
-        toReturn += "\t Identidad: " + this.identificacion + "\n";
-        toReturn += "\t Edad: " + Integer.toString(this.edad) + "\n";
-        toReturn += "\t Deporte: " + this.nacionalidad + "\n";
-        toReturn += "\t Certificado: " + (this.esCertificado? "Certificado":"No Certificado") + "\n";        
-        toReturn += "\t \t ------";
-        return toReturn; //To change body of generated methods, choose Tools | Templates.
-    }
-    
-}    
-
 public class Evento {
     private static final ArrayList<Persona> personas = new ArrayList<>();
 
@@ -97,7 +17,6 @@ public class Evento {
        procesarComando();
         
     }
-
     public static void agregarParticipante(Persona persona){
         personas.add(persona);
     }
