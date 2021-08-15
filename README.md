@@ -6,7 +6,7 @@ En las olimpiadas Tokio 2020, requieren un software para gestionar los participa
 
 
 
-## Ver el PDF anexo
+## Ver el [PDF anexo](https://github.com/Leviatt/Ciclo-2-Mision-TIC-2022/blob/main/Reto%202%20-%20UML.pdf)
 
 
  
