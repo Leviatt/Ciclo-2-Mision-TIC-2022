@@ -6,6 +6,7 @@ En las olimpiadas Tokio 2020, requieren un software para gestionar los participa
 
 
 
+## Ver el PDF anexo
 
 
  
@@ -58,12 +59,21 @@ Consideraciones
 
 Nota 1: Observe que el único comando que tiene salida (Imprimir en la pantalla) es el 3 (Listar participantes en el evento).
 
+Nota 2: En este ejercicio se requiere subir cuatro archivos.
+
+Uno correspondiente a la clase Persona llamado Persona.java,
+
+otro correspondiente a Deportista llamado Deportista.java
+
+otro correspondiente a Entrenador llamado Entrenador.java
+
+otro correspondiente al Evento llamado Evento.java
+
 Recuerde eliminar la línea de package al hacer el envío y utilizar el botón de [+] para agregar más de un archivo de código fuente.
 
  
 
-Nota 2: La clase Evento, debe tener el método main del programa. Este método, debe recibir los comandos como argumentos del programa.
-
+Nota 3: La clase Evento, debe tener el método main del programa. Este método, debe recibir los comandos como argumentos del programa.
  
 
 Ejemplo de ejecución del programa
