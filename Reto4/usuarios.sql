@@ -1,10 +1,10 @@
 CREATE TABLE usuarios(
 correo_electronico varchar(56) PRIMARY KEY,
-nombres varchar(56),
-apellidos varchar(56),
-edad tinyint,
-contraseña varchar(56),
-id_rol INTEGER,
+nombres varchar(56) NOT NULL,
+apellidos varchar(56) NOT NULL,
+edad tinyint NOT NULL,
+contraseña varchar(56) NOT NULL,
+id_rol INTEGER NOT NULL,
 FOREIGN KEY (id_rol) REFERENCES roles(id_rol)
 );
 INSERT INTO usuarios (correo_electronico, nombres, apellidos, edad, contraseña, id_rol)

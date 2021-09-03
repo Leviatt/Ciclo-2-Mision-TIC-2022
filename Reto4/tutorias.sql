@@ -1,9 +1,10 @@
 CREATE TABLE tutorias(
 id_turoria INTEGER AUTO_INCREMENT PRIMARY KEY,
-titulo varchar(512),
+titulo varchar(512)  NOT NULL,
 descripcion varchar(1024),
-año int,
-id_docente_encargado varchar(56) REFERENCES usuarios
+año integer NOT NULL,
+id_docente_encargado varchar(56) NOT NULL,
+FOREIGN KEY (id_docente_encargado) REFERENCES usuarios(correo_electronico)
 );
 INSERT INTO tutorias (titulo, descripcion, año, id_docente_encargado)
 VALUES ("Aritmética", "Aprende a realizar estas operaciones aritméticas básicas", 2020, "joanp@gmail.com");

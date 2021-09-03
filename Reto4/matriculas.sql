@@ -1,9 +1,9 @@
 CREATE TABLE matriculas(
 id_matricula INTEGER AUTO_INCREMENT PRIMARY KEY,
-id_tutoria INTEGER,
+id_tutoria INTEGER NOT NULL,
 FOREIGN KEY (id_tutoria) REFERENCES tutorias (id_tutoria),
-id_estudiante varchar(56),
-FOREIGN KEY (id_estudiantes) REFERENCES usuarios (correo_electronico)
+id_estudiante varchar(56) NOT NULL,
+FOREIGN KEY (id_estudiante) REFERENCES usuarios (correo_electronico)
 );
 INSERT INTO matriculas(id_estudiante, id_tutoria) VALUES ("camilag@gmail.com", 3);
 INSERT INTO matriculas(id_estudiante, id_tutoria) VALUES ("camilag@gmail.com", 10);
