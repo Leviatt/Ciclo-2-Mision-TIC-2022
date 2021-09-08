@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS usuarios;
 CREATE TABLE usuarios(
 correo_electronico varchar(56) PRIMARY KEY,
 nombres varchar(56) NOT NULL,
@@ -27,3 +28,4 @@ INSERT INTO usuarios (correo_electronico, nombres, apellidos, edad, contraseña,
 VALUES ("emiliab@gmail.com", "Emilia", "Buitrago", 25, "dd234as.#", 2);
 INSERT INTO usuarios (correo_electronico, nombres, apellidos, edad, contraseña, id_rol)
 VALUES ("emmak@gmail.com", "Emma Juliana", "Kimberly", 19, "dddfi23=?/", 2);
+
